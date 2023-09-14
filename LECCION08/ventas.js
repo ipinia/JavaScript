@@ -71,7 +71,8 @@ class Orden {
     for ( let producto of this._productos){
       productosOrden  += producto.toString() + ' ';
     }
-    console.log(`Id orden: ${this._idOrden}, Total: ${this.calcularTotal()}, \nProductos:\n ${productosOrden}`)
+ 
+  
   }
 }
 let producto1 = new Producto("Camisa", 300);
