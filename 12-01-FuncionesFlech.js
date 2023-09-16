@@ -12,3 +12,18 @@ const hola = function saludar(){
 }
 
 const holaFlecha = () => 'Saludar desde flecha'
+
+
+//Funciones callback
+
+
+let imp = function(mensaje){
+    console.log(mensaje);
+};
+
+function sumar (op1, op2, funcionCallBack){
+  let res = op1 + op2 ;
+    funcionCallBack(`Resultado: ${res}`)
+}
+
+sumar(3,4, imp)
