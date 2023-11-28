@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejemplo Formulario con JavaScrip</title>
+    <title>Manejo Dom JavaScript</title>
   </head>
-  <body>
-    <form id="formulario">
-      Nombre: <input type="text" name="nombre" value="Juan" />
-      <br />
-      Apellifo: <input type="text" name="apellido" value="Perez" />
-      <br />
-    </form>
+  <body >
+    <h1>Manejo DOM con JavaScript</h1>
+ <br>
+ <form  id="forma">
 
-    <button onclick="mostrarValores()">Mostrar</button>
-<div id="valores" ></div>
-    <script>
-      function mostrarValores() {
-        let formulario = document.forms["formulario"];
-        let texto = " ";
 
-        for (elemento of formulario) {
-          texto += elemento.value + "<br>";
-        }
-        document.getElementById('valores').innerHTML = texto;
-      }
+  Nombre: <input type="text" name="nombre" id="nombre"  >
+  <br>
+  <br>
+  Apellido: <input type="text" name="apellido" id="apellido"  >
+
+ </form>
+ 
+    <script >
+     const forma = document.getElementById('forma');
+
+     forma.addEventListener('focus', (evento)=>{
+      evento.target.style.background = 'pink';
+     },true);
+     forma.addEventListener('blur', (evento)=>{
+      evento.target.style.background = '';
+     },true);
+
     </script>
   </body>
 </html>
