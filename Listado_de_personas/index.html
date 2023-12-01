@@ -6,10 +6,25 @@
   <title>Listado de Personas</title>
   <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-<body>
+<body onload="mostrarPersonas()">
   <div class="contenedor" id="cabecero">
     <h1>Listado de Personas</h1>
   </div>
+
+  <div class="contenedor">
+    <div class="elemento">
+      <ul id="personas">
+        <!-- Aqui se cargan las personas -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div style="text-align: center;">
+        <button style="cursor: pointer;" onclick="agregarPersona()">+</button>
+    </div>
+  </div>
+
   <script src="JS/personas.js"></script>
   <script src="JS/app.js"></script>
 </body>
