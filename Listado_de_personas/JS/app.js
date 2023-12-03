@@ -12,3 +12,16 @@ function mostrarPersonas(){
   }
   document.getElementById('personas').innerHTML = texto;
 }
+function agregarPersona(){
+  const forma = document.forms['forma'];
+  const nombre = forma['nombre'];
+  const apellido = forma['apellido'];
+  const edad = forma['edad'];
+  const persona = new Persona(nombre.value, apellido.value, edad.value);
+
+  console.log(persona);
+  personas.push(persona);
+  mostrarPersonas();ø
+
+
+}
