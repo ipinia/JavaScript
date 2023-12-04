@@ -17,11 +17,14 @@ function agregarPersona(){
   const nombre = forma['nombre'];
   const apellido = forma['apellido'];
   const edad = forma['edad'];
+  if(nombre.value == '' || apellido.value == '' || edad.value == ''){
   const persona = new Persona(nombre.value, apellido.value, edad.value);
 
   console.log(persona);
   personas.push(persona);
-  mostrarPersonas();ø
-
+  mostrarPersonas();
+  }else{
+    alert('Todos los campos son obligatorios');
+  }
 
 }
