@@ -5,7 +5,7 @@ const mostrarReloj = () => {
   let seg = formatoHora(fecha.getSeconds());
   document.getElementById("hora").innerHTML = `${hr}:${min}:${seg}`;
 
-  const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'nov', 'dic'];
+  const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'nov','oct', 'dic'];
   const dias = ['dom', 'lun', 'mar', 'mie', 'jue', 'vie', 'sab'];
   let diaSemana = dias[fecha.getDay()];
   let dia = fecha.getDate();
@@ -13,6 +13,9 @@ const mostrarReloj = () => {
   let anio = fecha.getFullYear();
   let fechaTexto = `${diaSemana}, ${dia} ${mes} ${anio}`;
   document.getElementById("fecha").innerHTML = fechaTexto;
+  
+  document.getElementById('contenedor').classList.toggle('animar');/*toggle: si tiene la clase la quita y si no la tiene la pone*/
+
 };
 
 
@@ -22,5 +25,7 @@ const formatoHora = (hora) => {
   }
   return hora;
 };
+
+
 
 setInterval(mostrarReloj, 1000);
