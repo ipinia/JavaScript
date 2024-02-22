@@ -1,0 +1,43 @@
+ h1{
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 4px #000000;
+ }
+.container{
+  width: 80%;
+  height: 20%;
+  overflow: auto;
+  margin: auto;
+  border: 3px dashed #a8dadc;
+}
+span{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: larger;
+  background-color: #a8dadc;
+  border: 1px solid #457b9d;
+  height: 50px;
+  padding: 5px ;
+  display: inline-block;
+}
+.menu{
+  list-style: none;
+  text-align: center;
+
+}
+.menu li{
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+  background-color: #a8dadc;
+  border-radius: 5px;
+  
+}
+li a{
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: bolder;
+  font-size: 20px;
+}
