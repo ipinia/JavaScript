@@ -2,6 +2,7 @@ h1{
   text-align: center;
   color: #e63046;
 }
+
 h2{
   text-align: center;
   color: #f4a261;
@@ -15,20 +16,12 @@ div.container{
   color: #457b9d;
 }
 
-div.container:hover{
-  background-color: #457b9d;
-  color: #f1faee;
+img{
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
 }
 
-div.container.hide p{
-  display: none;
-}
-div.container.hide:hover p{
-  display: block;
-  background-color: #a8dadc;
-  color: #023e8a;
-  padding: 15px;
-}
-div.container.primero p:first-child {
-  font-variant: small-caps;
+img:hover{
+  opacity: 1;
 }
